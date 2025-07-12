@@ -24,7 +24,7 @@ export default async function Citis() {
   console.log(cities);
   return (
     <div className="container mx-auto xl:max-w-[1200px] px-4">
-      <h1 className="text-3xl font-semibold text-center my-8 uppercase">
+      <h1 className="text-3xl font-bold text-center my-8 uppercase">
         Choose your locatoin
       </h1>
       <div className="grid md:grid-cols-6 gap-6 container mx-auto px-4">
@@ -34,7 +34,7 @@ export default async function Citis() {
             key={index}
             className="flex flex-col items-center  p-4"
           >
-            <h2 className="text-xl font-bold mb-4">{city.city}</h2>
+            <h4 className="text-xl font-semibold mb-4">{city.city}</h4>
 
             <Image
               src={city.image}
