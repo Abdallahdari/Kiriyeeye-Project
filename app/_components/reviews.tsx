@@ -55,7 +55,7 @@ export default function Reviews() {
         >
           {testimonials.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="bg-gray-100 rounded-3xl p-6 flex flex-col space-y-4">
+              <div className="bg-gray-100 rounded-t-3xl rounded-br-3xl p-6 flex flex-col space-y-4">
                 <div className="flex items-center space-x-4">
                   <Image
                     height={50}

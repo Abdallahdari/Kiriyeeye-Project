@@ -24,7 +24,8 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-xs">
-            &copy; {new Date().getFullYear()} Flex Living
+            &copy; {new Date().getFullYear()} Abdullahi Abdirizak mohamed. All
+            rights reserved.
           </p>
         </div>
 
