@@ -43,9 +43,9 @@ export default function Exculded() {
 
           <div className="flex flex-col gap-2">
             {" "}
-            <p className="font-bold">High-speed Wi-Fi .</p>
+            <p className="font-bold">High-speed Wi-Fi.</p>
             <p className="text-sm ">
-              Best in class internet speeds suitable for working from home .
+              Best in class internet speeds suitable for working from home.
             </p>
           </div>
         </div>
@@ -54,8 +54,8 @@ export default function Exculded() {
           <MessageCircle />
           <div className="flex flex-col gap-2">
             {" "}
-            <p className="font-bold">24/7 support .</p>
-            <p className="text-sm ">On hand team for any issues you have .</p>
+            <p className="font-bold">24/7 support.</p>
+            <p className="text-sm ">On hand team for any issues you have.</p>
           </div>
         </div>
       </div>

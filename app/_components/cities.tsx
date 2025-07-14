@@ -21,7 +21,6 @@ export default async function Citis() {
 
   const cities = Array.from(uniqueCitiesMap.values());
 
-  console.log(cities);
   return (
     <div className="container mx-auto xl:max-w-[1200px] px-4">
       <h1 className="text-3xl font-bold text-center my-8 uppercase">
@@ -32,20 +31,31 @@ export default async function Citis() {
           <Link
             href={""}
             key={index}
-            className="flex flex-col items-center  p-4"
+            className="flex group  flex-col items-center  p-4"
           >
-            <h4 className="text-xl font-semibold mb-4">{city.city}</h4>
+            <p className=" font-semibold mb-4 group-hover:text-pink-500 transition-all duration-300">
+              {city.city}
+            </p>
 
             <Image
               src={city.image}
               alt={city.city}
               width={200}
+              loading="lazy"
               height={200}
-              className=" rounded-lg mb-4 object-cover"
+              className="hover:scale-105 transition-all duration-300 rounded-lg mb-4 object-cover"
             />
           </Link>
         ))}
       </div>{" "}
+      <div className="flex items-center justify-center w-full">
+        <Link
+          href={"/houses"}
+          className="text-white bg-[#303d35] px-6 py-2 rounded-full hover:bg-[#717e71] transition-all duration-300 "
+        >
+          View all cities
+        </Link>
+      </div>
     </div>
   );
 }
