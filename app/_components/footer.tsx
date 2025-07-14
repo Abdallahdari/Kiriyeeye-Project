@@ -23,7 +23,9 @@ export default function Footer() {
               <i className="fab fa-twitter"></i>
             </Link>
           </div>
-          <p className="text-xs">&copy; 2021 Flex Living</p>
+          <p className="text-xs">
+            &copy; {new Date().getFullYear()} Flex Living
+          </p>
         </div>
 
         {/* Company */}
@@ -72,7 +74,7 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div>
+        <div className="">
           <h3 className="font-semibold mb-2">Stay up to date</h3>
           <p className="mb-2">
             Be the first to know about our newest apartments
