@@ -7,3 +7,21 @@ export async function getGuryo() {
   }
   return data;
 }
+export async function getGuryoById(id) {
+  try {
+    const { data, error } = await supabase
+      .from("Guryo")
+      .select("*")
+      .eq("id", id)
+      .single();
+
+    if (error) {
+      throw new Error(`Failed to fetch house {error.message}`);
+    }
+
+    return data;
+  } catch (err) {
+    console.error("Unexpected error in getGuryoById:", err);
+    throw new Error(`Failed to load house data: ${err.message}`);
+  }
+}

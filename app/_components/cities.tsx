@@ -26,7 +26,9 @@ export default async function Citis() {
       <h1 className="text-3xl font-bold text-center my-8 uppercase">
         Choose your locatoin
       </h1>
-      <div className="grid md:grid-cols-6 gap-6 container mx-auto px-4">
+      <div
+        className={`grid md:grid-cols-${data.length} gap-6 container mx-auto px-4`}
+      >
         {cities.map((city, index) => (
           <Link
             href={""}
